@@ -58,7 +58,7 @@ global proc prerender(string $scene, int $rpr_iter){{
 	fprint $fileID ("\r\n  \"core_version\": \"" + getRprCoreVersion() + "\",");
 	fprint $fileID ("\r\n  \"file_name\": \"" + "converted_" + $scene + ".jpg\",");
 	fprint $fileID ("\r\n  \"render_color_path\": \"Color/converted_" + $scene + ".jpg\",");
-	fprint $fileID ("\r\n  \"baseline_color_path\": \"Color/" + $scene + ".jpg\",");
+	fprint $fileID ("\r\n  \"baseline_color_path\": \"Color/" + $scene + ".png\",");
 	fprint $fileID ("\r\n  \"scene_name\": \"" + $scene + "\",");
 	fprint $fileID ("\r\n  \"render_time\": 1,");
 	fprint $fileID ("\r\n  \"test_case\": \"" + $scene + "\",");
