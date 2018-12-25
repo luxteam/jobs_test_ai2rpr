@@ -1,8 +1,6 @@
 [
   {"name": "Bokeh_pool_balls.ma", "status": "active"},
-  {"name": "Particle_Instancer_Balloons.ma", "status": "active"},
   {"name": "Room_user-guide.ma", "status": "active"},
   {"name": "Studio-Rear.ma", "status": "active"},
-  {"name": "Studio-Side.ma", "status": "active"},
-  {"name": "Studio_Top.ma", "status": "active"}
+  {"name": "Studio-Side.ma", "status": "active"}
 ]
