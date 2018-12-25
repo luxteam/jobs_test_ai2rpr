@@ -2,7 +2,6 @@
   {"name": "aiAmbientOcclusion.ma", "status": "active"},
   {"name": "aiAreaLight.ma", "status": "active"},
   {"name": "aiDomeLight.ma", "status": "active"},
-  {"name": "aiFlat.ma", "status": "active"},
   {"name": "aiMixShader.ma", "status": "active"},
   {"name": "aiPhorometricLight.ma", "status": "active"},
   {"name": "aiRaySwitch.ma", "status": "active"},
