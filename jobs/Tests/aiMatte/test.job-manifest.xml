@@ -4,18 +4,18 @@
     <outpath value="{OutputDir}"/>
 
     <execute command='python "{ResourcesDir}\\arnoldRender.py"'>
-        <argument>--tests_list "{Root}\\Tests\\Smoke\\test.cases.json"</argument>
+        <argument>--tests_list "{Root}\\Tests\\aiMatte\\test.cases.json"</argument>
         <argument>--render_path "{Tool}\Render.exe"</argument>
-        <argument>--scene_path "{ScenesDir}"</argument>
+        <argument>--scene_path "{ScenesDir}\\Shader\\aiMatte"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--output_img_dir "{OutputDir}\\Color"</argument>
         <argument>--output_file_ext png</argument>
     </execute>
 
     <execute command='python "{ResourcesDir}\\rprRender.py"'>
-        <argument>--tests_list "{Root}\\Tests\\Smoke\\test.cases.json"</argument>
+        <argument>--tests_list "{Root}\\Tests\\aiMatte\\test.cases.json"</argument>
         <argument>--render_path "{Tool}\Maya.exe"</argument>
-        <argument>--scene_path "{ScenesDir}"</argument>
+        <argument>--scene_path "{ScenesDir}\\Shader\\aiMatte"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--output_img_dir "{OutputDir}"</argument>
         <argument>--output_file_ext png</argument>

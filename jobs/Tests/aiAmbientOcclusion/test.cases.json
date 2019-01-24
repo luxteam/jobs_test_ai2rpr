@@ -1,0 +1,19 @@
+[
+  {"name": "aiAmbientOcclusion.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion1.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion10.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion11.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion2.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion4.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion5.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion6.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion7.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion8.ma", "status": "active"},
+  {"name": "aiAmbientOcclusion9.ma", "status": "active"},
+  {"name": "Arnold_AO1.ma", "status": "active"},
+  {"name": "Arnold_AO2.ma", "status": "active"},
+  {"name": "Arnold_AO3.ma", "status": "active"},
+  {"name": "Arnold_AO4.ma", "status": "active"},
+  {"name": "Arnold_AO5.ma", "status": "active"},
+  {"name": "Arnold_AO6.ma", "status": "active"}
+]
