@@ -1,0 +1,7 @@
+[
+  {"name": "Arnold_aiImage.ma", "status": "active"},
+  {"name": "Arnold_bump2d.ma", "status": "active"},
+  {"name": "Arnold_Multiply_divide.ma", "status": "active"},
+  {"name": "ArnoldContrast.ma", "status": "active"},
+  {"name": "ArnoldRemapHSV.ma", "status": "active"}
+]

@@ -1,0 +1,6 @@
+[
+  {"name": "Arnold_atmosphereVolume.ma", "status": "active"},
+  {"name": "Arnold_atmosphereVolume_VolumeFloat.ma", "status": "active"},
+  {"name": "Arnold_atmosphereVolume_VolumeSampleRGB.ma", "status": "active"},
+  {"name": "Arnold_Cache.ma", "status": "active"}
+]

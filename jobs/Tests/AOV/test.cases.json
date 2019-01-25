@@ -1,0 +1,7 @@
+[
+  {"name": "Arnold_Cryptomatte.ma", "status": "active"},
+  {"name": "Arnold_writecolor.ma", "status": "active"},
+  {"name": "Arnold_Writefloat.ma", "status": "active"},
+  {"name": "Arnold_Writeint.ma", "status": "active"},
+  {"name": "Arnold_writergba.ma", "status": "active"}
+]
