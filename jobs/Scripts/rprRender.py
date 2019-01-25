@@ -66,6 +66,7 @@ def main():
 
     cmd_script = '''
     set MAYA_CMD_FILE_OUTPUT=%cd%/renderTool.log
+    set PYTHONPATH=%cd%;PYTHONPATH
     set MAYA_SCRIPT_PATH=%cd%;%MAYA_SCRIPT_PATH%
     "{}" -command "global int $manual = 1; source script.mel; evalDeferred -lp \\"main()\\";"'''.format(args.render_path)
 
