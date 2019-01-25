@@ -8,12 +8,12 @@
   {"name": "aiCarPaint6.ma", "status": "active"},
   {"name": "aiCarPaint7.ma", "status": "active"},
   {"name": "aiCarPaint8.ma", "status": "active"},
-  {"name": "Arnold_carpaint1.ma", "status": "active"},
-  {"name": "Arnold_carpaint2.ma", "status": "active"},
-  {"name": "Arnold_carpaint3.ma", "status": "active"},
-  {"name": "Arnold_carpaint4.ma", "status": "active"},
-  {"name": "Arnold_carpaint5.ma", "status": "active"},
-  {"name": "Arnold_carpaint6.ma", "status": "active"},
-  {"name": "Arnold_carpaint7.ma", "status": "active"},
-  {"name": "Arnold_carpaint8.ma", "status": "active"}
+  {"name": "Arnold_carpaint1.ma", "status": ""},
+  {"name": "Arnold_carpaint2.ma", "status": ""},
+  {"name": "Arnold_carpaint3.ma", "status": ""},
+  {"name": "Arnold_carpaint4.ma", "status": ""},
+  {"name": "Arnold_carpaint5.ma", "status": ""},
+  {"name": "Arnold_carpaint6.ma", "status": ""},
+  {"name": "Arnold_carpaint7.ma", "status": ""},
+  {"name": "Arnold_carpaint8.ma", "status": ""}
 ]
