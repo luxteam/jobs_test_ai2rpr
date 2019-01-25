@@ -1,0 +1,21 @@
+[
+  {"name": "Arnold_aiImage.ma", "status": "active"},
+  {"name": "Arnold_bump2d.ma", "status": "active"},
+  {"name": "Arnold_curvature1.ma", "status": "active"},
+  {"name": "Arnold_curvature2.ma", "status": "active"},
+  {"name": "Arnold_curvature3.ma", "status": "active"},
+  {"name": "Arnold_Flakes1.ma", "status": "active"},
+  {"name": "Arnold_Flakes2.ma", "status": "active"},
+  {"name": "Arnold_Flakes3.ma", "status": "active"},
+  {"name": "Arnold_image1.ma", "status": "active"},
+  {"name": "Arnold_Multiply_divide.ma", "status": "active"},
+  {"name": "Arnold_noise1.ma", "status": "active"},
+  {"name": "Arnold_noise2.ma", "status": "active"},
+  {"name": "Arnold_noise4.ma", "status": "active"},
+  {"name": "Arnold_noisevector1.ma", "status": "active"},
+  {"name": "Arnold_noisevector2.ma", "status": "active"},
+  {"name": "Arnold_noisevector4.ma", "status": "active"},
+  {"name": "Arnold_thinFilm.ma", "status": "active"},
+  {"name": "ArnoldContrast.ma", "status": "active"},
+  {"name": "ArnoldRemapHSV.ma", "status": "active"}
+]
