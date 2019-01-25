@@ -62,7 +62,7 @@ def main():
     with open(os.path.join(args.output_dir, 'script.mel'), 'w') as file:
         file.write(mel_script)
 
-    shutil.copyfile(os.path.join(os.path.dirname(__file__), 'convertAI2RPR.mel'), os.path.join(args.output_dir, 'convertAI2RPR.mel'))
+    shutil.copyfile(os.path.join(os.path.dirname(__file__), 'convertAI2RPR.py'), os.path.join(args.output_dir, 'convertAI2RPR.py'))
 
     cmd_script = '''
     set MAYA_CMD_FILE_OUTPUT=%cd%/renderTool.log
