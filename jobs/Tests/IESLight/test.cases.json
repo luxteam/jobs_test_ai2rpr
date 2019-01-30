@@ -4,8 +4,8 @@
   {"name": "Arnold_Photometric1.ma", "status": "active"},
   {"name": "Arnold_Photometric2.ma", "status": "active"},
   {"name": "Arnold_Photometric3.ma", "status": "active"},
-  {"name": "Arnold_Photometric4.ma", "status": ""},
-  {"name": "Arnold_Photometric5.ma", "status": ""},
-  {"name": "Arnold_Photometric6.ma", "status": ""},
-  {"name": "Arnold_Photometric7.ma", "status": ""}
+  {"name": "Arnold_Photometric4.ma", "status": "active"},
+  {"name": "Arnold_Photometric5.ma", "status": "active"},
+  {"name": "Arnold_Photometric6.ma", "status": "active"},
+  {"name": "Arnold_Photometric7.ma", "status": "active"}
 ]

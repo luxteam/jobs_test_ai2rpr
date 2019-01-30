@@ -34,9 +34,9 @@
   {"name": "aiStandardSurface7.ma", "status": "active"},
   {"name": "aiStandardSurface8.ma", "status": "active"},
   {"name": "aiStandardSurface9.ma", "status": "active"},
-  {"name": "Arnold_Standard.ma", "status": ""},
-  {"name": "Arnold_Standard2.ma", "status": ""},
-  {"name": "Arnold_Standard3.ma", "status": ""},
-  {"name": "Arnold_Standard4.ma", "status": ""},
-  {"name": "Arnold_Standard5.ma", "status": ""}
+  {"name": "Arnold_Standard.ma", "status": "active"},
+  {"name": "Arnold_Standard2.ma", "status": "active"},
+  {"name": "Arnold_Standard3.ma", "status": "active"},
+  {"name": "Arnold_Standard4.ma", "status": "active"},
+  {"name": "Arnold_Standard5.ma", "status": "active"}
 ]
