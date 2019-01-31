@@ -4,7 +4,7 @@ global proc rpr_render(string $scene){{
 	optionVar -iva "RPR_DevicesSelected" 1;
 
 	if ( catch (`lookThru camera1`)) {{
-        print "no camera1";
+        print "no camera1\n";
     }}
 
 	fireRender -waitForItTwo;

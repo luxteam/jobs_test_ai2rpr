@@ -3,7 +3,7 @@
 
     <outpath value="{OutputDir}"/>
 
-    <execute command='python "{ResourcesDir}\\arnoldRender.py"'>
+    <execute command='python "{ResourcesDir}\\arnoldRender.py"' timeout="1700">
         <argument>--tests_list "{Root}\\Tests\\aiStandardSurface\\test.cases.json"</argument>
         <argument>--render_path "{Tool}\Render.exe"</argument>
         <argument>--scene_path "{ScenesDir}\\Shader\\aiStandardSurface"</argument>

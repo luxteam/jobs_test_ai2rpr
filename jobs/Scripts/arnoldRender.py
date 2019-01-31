@@ -36,8 +36,12 @@ def main():
     for test in tests_list:
         if test['status'] == 'active':
             render_log_path = os.path.join(args.output_dir, test['name'] + '.rs.log')
-            cmd_script = '"{}" -r arnold -log "{}" -rd "{}" -cam persp -im {} -of {} "{}"'\
-                .format(args.render_path, render_log_path, args.output_img_dir, test['name'], args.output_file_ext, os.path.join(args.scene_path, test['name']))
+            case_camera = "persp"
+            if "camera" in test.keys() and test['camera']:
+                case_camera = test['camera']
+            cmd_script = '"{render_path}" -r arnold -log "{log_path}" -rd "{out_dir}" -cam {camera} -im {img_name} -of {file_ext} "{scene_path}"'\
+                .format(render_path=args.render_path, log_path=render_log_path, out_dir=args.output_img_dir,
+                        camera=case_camera, img_name=test['name'], file_ext=args.output_file_ext, scene_path=os.path.join(args.scene_path, test['name']))
             cmd_script_path = os.path.join(args.output_dir, test['name'] + '.renderArnold.bat')
 
             try:
