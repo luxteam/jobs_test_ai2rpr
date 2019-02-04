@@ -1,6 +1,19 @@
 [
-  {"name": "Bokeh_pool_balls.ma", "status": "active"},
+  {"name": "bump_test.ma", "status": "active"},
+  {"name": "car.ma", "status": "active", "camera": "camera1"},
+  {"name": "Dragon_Updated.ma", "status": "active"},
+  {"name": "gun_Arnold.ma", "status": "active"},
+  {"name": "LaptopArnold.ma", "status": "active", "camera": "camera1"},
+  {"name": "mesh-light.ma", "status": "_"},
+  {"name": "nParticles_Depth_of_Field.ma", "status": "_"},
+  {"name": "Particle_Instancer_Balloons.ma", "status": "_"},
+  {"name": "Photometric lights.ma", "status": "active"},
+  {"name": "porch AI.ma", "status": "_"},
+  {"name": "room.ma", "status": "_"},
   {"name": "Room_user-guide.ma", "status": "active"},
+  {"name": "standar test.ma", "status": "_"},
   {"name": "Studio-Rear.ma", "status": "active"},
-  {"name": "Studio-Side.ma", "status": ""}
+  {"name": "Studio-Side.ma", "status": "active"},
+  {"name": "Studio_Top.ma", "status": "_"},
+  {"name": "Bokeh_pool_balls.ma", "status": "_"}
 ]

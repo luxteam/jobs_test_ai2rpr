@@ -39,7 +39,7 @@ def main():
             case_camera = "persp"
             if "camera" in test.keys() and test['camera']:
                 case_camera = test['camera']
-            cmd_script = '"{render_path}" -r arnold -log "{log_path}" -rd "{out_dir}" -cam {camera} -im {img_name} -of {file_ext} "{scene_path}"'\
+            cmd_script = '"{render_path}" -r arnold -log "{log_path}" -rd "{out_dir}" -cam {camera} -im "{img_name}" -of {file_ext} "{scene_path}"'\
                 .format(render_path=args.render_path, log_path=render_log_path, out_dir=args.output_img_dir,
                         camera=case_camera, img_name=test['name'], file_ext=args.output_file_ext, scene_path=os.path.join(args.scene_path, test['name']))
             cmd_script_path = os.path.join(args.output_dir, test['name'] + '.renderArnold.bat')
