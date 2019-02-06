@@ -2,6 +2,7 @@
     {"name": "Bokeh_pool_balls.ma", "status": "active", "camera": "camera1"},
     {"name": "bump_test.ma", "status": "active"},
     {"name": "car.ma", "status": "active", "camera": "camera1"},
+    {"name": "curviture.ma", "status": "active"},
     {"name": "Dragon_Updated.ma", "status": "active"},
     {"name": "gun_Arnold.ma", "status": "active"},
     {"name": "LaptopArnold.ma", "status": "active", "camera": "samsung_custome_modded:camera1"},
@@ -10,13 +11,14 @@
     {"name": "nParticles_Depth_of_Field.ma", "status": "ANIMATION"},
     {"name": "Particle_Instancer_Balloons.ma", "status": "ANIMATION"},
     {"name": "Photometric lights.ma", "status": "active"},
-    {"name": "porch_AI.ma", "status": "active", "camera": "camera1"},
+    {"name": "porch_AI.ma", "status": "active"},
     {"name": "room.ma", "status": "SUBSTANCE"},
     {"name": "Room_user-guide.ma", "status": "active", "camera": "camera1"},
     {"name": "sss.ma", "status": "active"},
     {"name": "standar test.ma", "status": "active"},
     {"name": "Studio-Rear.ma", "status": "active"},
     {"name": "Studio-Side.ma", "status": "active"},
-    {"name": "Studio_Top.ma", "status": "UV", "camera": "camera1"},
-    {"name": "volume_test.ma", "status": "RESOURCES"}
+    {"name": "volume_test.ma", "status": "active"},
+
+    {"name": "Studio_Top.ma", "status": "active", "camera": "camera1"}
 ]
