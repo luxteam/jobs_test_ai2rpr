@@ -52,6 +52,9 @@ def main():
     with open(args.tests_list, 'r') as file:
         tests_list = json.loads(file.read())
 
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+
     for test in tests_list:
         if test['status'] == 'active':
             tests += """prerender("{}", 300);\n""".format(test['name'])
