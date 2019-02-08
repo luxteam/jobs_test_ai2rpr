@@ -4,7 +4,7 @@
     {"name": "03_RiflePistol.ma", "status": "active"},
     {"name": "04_EmissiveCity.ma", "status": "active"},
     {"name": "05_Laptop.ma", "status": "active"},
-    {"name": "06_InteriorRoom.ma", "status": "active"},
+    {"name": "06_InteriorRoom.ma", "status": ""},
     {"name": "07_IEStest.ma", "status": "active"},
     {"name": "08_LightTest.ma", "status": "active"},
     {"name": "09_Dragon.ma", "status": "active"},
