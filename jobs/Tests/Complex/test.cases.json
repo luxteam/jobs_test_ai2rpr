@@ -4,16 +4,16 @@
     {"name": "03_RiflePistol.ma", "status": "active"},
     {"name": "04_EmissiveCity.ma", "status": ""},
     {"name": "05_Laptop.ma", "status": "active"},
-    {"name": "06_InteriorRoom.ma", "status": "active", "camera": "camera1"},
+    {"name": "06_InteriorRoom.ma", "status": "", "camera": "camera1"},
     {"name": "07_IEStest.ma", "status": "active"},
     {"name": "08_LightTest.ma", "status": "active"},
     {"name": "09_Dragon.ma", "status": "active"},
     {"name": "10_Car_Side.ma", "status": "active"},
     {"name": "11_Car_Rear.ma", "status": "active"},
     {"name": "12_Car_Top.ma", "status": "active"},
-    {"name": "13_Mercedes.ma", "status": ""},
-    {"name": "14_Bump.ma", "status": ""},
-    {"name": "15_ComplexMaterials.ma", "status": ""},
-    {"name": "16_CurvatureMustang.ma", "status": ""},
-    {"name": "17_Volume.ma", "status": ""}
+    {"name": "13_Mercedes.ma", "status": "active"},
+    {"name": "14_Bump.ma", "status": "active"},
+    {"name": "15_ComplexMaterials.ma", "status": "active"},
+    {"name": "16_CurvatureMustang.ma", "status": "active"},
+    {"name": "17_Volume.ma", "status": "active"}
 ]
