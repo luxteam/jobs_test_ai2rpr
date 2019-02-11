@@ -61,7 +61,6 @@ def prerender(scene, rpr_iter):
     report['core_version'] = mel.eval("getRprCoreVersion()")
     report['file_name'] = "converted_" + scene + ".jpg"
     report['render_color_path'] = "Color/converted_" + scene + ".jpg"
-    report['original_color_path'] = "Color/" + scene + ".png"
     report['scene_name'] = scene
     report['render_time'] = 1
     report['test_case'] = scene

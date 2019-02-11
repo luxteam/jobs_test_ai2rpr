@@ -52,23 +52,17 @@ def main():
     with open(args.tests_list, 'r') as file:
         tests_list = json.loads(file.read())
 
-    if not os.path.exists(args.output_dir):
-        os.makedirs(args.output_dir)
+    if not os.path.exists(os.path.join(args.output_dir, 'Color')):
+        os.makedirs(os.path.join(args.output_dir, 'Color'))
 
     tests = []
     for test in tests_list:
         if test['status'] == 'active':
             tests.append(test['name'])
-            # tests += """prerender("{}", 300);\n""".format(test['name'])
 
     with open(os.path.join(os.path.dirname(__file__), 'main_template.py'), 'r') as file:
         py_script = file.read().format(tests=tests, work_dir=args.output_dir.replace('\\', '/'), res_path=args.scene_path.replace('\\', '/'))
 
-    # with open(os.path.join(os.path.dirname(__file__), 'main_template.mel'), 'r') as file:
-    #     mel_script = file.read().format(tests=tests, work_dir=args.output_dir.replace('\\', '/'), res_path=args.scene_path.replace('\\', '/'))
-
-    # with open(os.path.join(args.output_dir, 'script.mel'), 'w') as file:
-        # file.write(mel_script)
     with open(os.path.join(args.output_dir, 'script.py'), 'w') as file:
         file.write(py_script)
 
@@ -80,7 +74,6 @@ def main():
     set MAYA_SCRIPT_PATH=%cd%;%MAYA_SCRIPT_PATH%
     "{}" -command "python(\\"import script as converter\\"); python(\\"converter.main()\\");" '''.format(args.render_path)
 
-    # "{}" -command "global int $manual = 1; source script.mel; evalDeferred -lp \\"main()\\";"'''.format(args.render_path)
     cmd_script_path = os.path.join(args.output_dir, 'renderRPR.bat')
 
     try:
