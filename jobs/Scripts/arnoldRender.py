@@ -35,6 +35,8 @@ def main():
 
     for test in tests_list:
         if test['status'] == 'active':
+            case_report = [{"original_color_path": "Color/" + test['name'] + '.' + args.output_file_ext}]
+
             render_log_path = os.path.join(args.output_dir, test['name'] + '.rs.log')
             case_camera = "persp"
             if "camera" in test.keys() and test['camera']:
@@ -66,6 +68,9 @@ def main():
                         child.terminate()
                     p.terminate()
                 # return rc
+                if rc == 0:
+                    with open(os.path.join(args.output_dir, test['name'] + '_AI.json'), 'w') as file:
+                        json.dump(case_report, file, indent=4)
     return 0
 
 
