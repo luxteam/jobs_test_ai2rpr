@@ -25,4 +25,10 @@
         <argument>--work_dir "{OutputDir}"</argument>
     </execute>
 
+    <execute command='python "{CommonDir}/scripts/ImageComparator/compareByJSON.py"'>
+        <argument>--work_dir "{OutputDir}"</argument>
+        <argument>--base_dir "{BaselineDir}/aiSky"</argument>
+        <argument>--case_suffix _AI.json</argument>
+    </execute>
+
 </job-manifest>
