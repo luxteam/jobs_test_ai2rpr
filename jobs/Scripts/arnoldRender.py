@@ -6,7 +6,8 @@ import psutil
 import json
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir, os.path.pardir)))
 from jobs_launcher.core.config import main_logger
-
+from jobs_launcher.core.config import RENDER_REPORT_BASE
+import cpuinfo
 
 def createArgsParser():
     parser = argparse.ArgumentParser()
@@ -35,9 +36,14 @@ def main():
 
     for test in tests_list:
         if test['status'] == 'active':
-            case_report = [{"original_color_path": "Color/" + test['name'] + '.' + args.output_file_ext}]
+            case_report = RENDER_REPORT_BASE
+            case_report.update({
+                "original_color_path": "Color/" + test['name'] + '.' + args.output_file_ext,
+                "original_render_log": test['name'] + '.or.log',
+                "render_device": cpuinfo.get_cpu_info()['brand']
+            })
 
-            render_log_path = os.path.join(args.output_dir, test['name'] + '.rs.log')
+            render_log_path = os.path.join(args.output_dir, test['name'] + '.or.log')
             case_camera = "persp"
             if "camera" in test.keys() and test['camera']:
                 case_camera = test['camera']
@@ -70,7 +76,7 @@ def main():
                 # return rc
                 if rc == 0:
                     with open(os.path.join(args.output_dir, test['name'] + '_AI.json'), 'w') as file:
-                        json.dump(case_report, file, indent=4)
+                        json.dump([case_report], file, indent=4)
     return 0
 
 

@@ -11,6 +11,9 @@ directory = args.work_dir
 
 files = os.listdir(directory)
 json_files = list(filter(lambda x: x.endswith('RPR.json'), files))
+# build report.json if was launched render_ai.bat
+if not json_files:
+    json_files = list(filter(lambda x: x.endswith('AI.json'), files))
 result_json = ""
 
 for file in range(len(json_files)):
