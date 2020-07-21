@@ -41,6 +41,7 @@ def prerender(scene, rpr_iter):
     if not cmds.pluginInfo("RadeonProRender", q=True, loaded=True):
         cmds.loadPlugin("RadeonProRender")
 
+    cmds.setAttr("RadeonProRenderGlobals.tahoeVersion", {engine})
     convertAI2RPR.auto_launch()
 
     print("Conversion finished.\n")

@@ -41,6 +41,7 @@ def createArgsParser():
     parser.add_argument('--output_dir', required=True)
     parser.add_argument('--output_img_dir', required=True)
     parser.add_argument('--output_file_ext', required=True)
+    parser.add_argument('--engine', required=False)
     return parser.parse_args()
 
 
@@ -59,9 +60,11 @@ def main():
     for test in tests_list:
         if test['status'] == 'active':
             tests.append(test['name'])
-
+    print(args.engine)
+    
+    engine = 1 if(args.engine is None) else args.engine
     with open(os.path.join(os.path.dirname(__file__), 'main_template.py'), 'r') as file:
-        py_script = file.read().format(tests=tests, work_dir=args.output_dir.replace('\\', '/'), res_path=args.scene_path.replace('\\', '/'))
+        py_script = file.read().format(tests=tests, work_dir=args.output_dir.replace('\\', '/'), res_path=args.scene_path.replace('\\', '/'), engine=engine)
 
     with open(os.path.join(args.output_dir, 'script.py'), 'w') as file:
         file.write(py_script)

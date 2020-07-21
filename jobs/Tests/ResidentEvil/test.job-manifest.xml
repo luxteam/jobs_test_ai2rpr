@@ -19,6 +19,7 @@
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--output_img_dir "{OutputDir}"</argument>
         <argument>--output_file_ext png</argument>
+        <argument>--engine 2</argument>
     </execute>
 
     <execute command='python "{CWD}/Scripts/make_report_json.py"'>
