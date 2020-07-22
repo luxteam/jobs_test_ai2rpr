@@ -4,7 +4,7 @@
     <outpath value="{OutputDir}"/>
 
     <execute command='python "{ResourcesDir}\\arnoldRender.py"' timeout="7200">
-        <argument>--tests_list "{Root}\\Tests\\ResidentEvil\\test.cases.json"</argument>
+        <argument>--tests_list "{Root}\\Tests\\ResidentEvilNorthstar\\test.cases.json"</argument>
         <argument>--render_path "{Tool}\Render.exe"</argument>
         <argument>--scene_path "{ScenesDir}\\ResidentEvil"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
@@ -13,13 +13,13 @@
     </execute>
 
     <execute command='python "{ResourcesDir}\\rprRender.py"'>
-        <argument>--tests_list "{Root}\\Tests\\ResidentEvil\\test.cases.json"</argument>
+        <argument>--tests_list "{Root}\\Tests\\ResidentEvilNorthstar\\test.cases.json"</argument>
         <argument>--render_path "{Tool}\Maya.exe"</argument>
         <argument>--scene_path "{ScenesDir}\\ResidentEvil"</argument>
         <argument>--output_dir "{OutputDir}"</argument>
         <argument>--output_img_dir "{OutputDir}"</argument>
         <argument>--output_file_ext png</argument>
-        <argument>--engine 1</argument>
+        <argument>--engine 2</argument>
     </execute>
 
     <execute command='python "{CWD}/Scripts/make_report_json.py"'>
