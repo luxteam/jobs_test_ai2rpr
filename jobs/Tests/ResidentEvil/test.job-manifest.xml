@@ -12,7 +12,7 @@
         <argument>--output_file_ext png</argument>
     </execute>
 
-    <execute command='python "{ResourcesDir}\\rprRender.py"' timeout="7200">
+    <execute command='python "{ResourcesDir}\\rprRender.py"' timeout="14400">
         <argument>--tests_list "{Root}\\Tests\\ResidentEvil\\test.cases.json"</argument>
         <argument>--render_path "{Tool}\Maya.exe"</argument>
         <argument>--scene_path "{ScenesDir}\\ResidentEvil"</argument>
