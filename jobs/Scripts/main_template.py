@@ -18,10 +18,14 @@ def rpr_render(scene):
 
     cmds.fireRender(waitForItTwo=True)
 
+    start_time = datetime.datetime.now()
     mel.eval("renderIntoNewWindow render")
     output = os.path.join("{work_dir}", "Color", "converted_" + scene)
     cmds.renderWindowEditor("renderView", edit=True, dst="color")
     cmds.renderWindowEditor("renderView", edit=True, com=True, writeImage=output)
+    end_time = datetime.datetime.now()
+
+    return (end_time - start_time).total_seconds()
 
 
 def prerender(scene, rpr_iter):
@@ -50,8 +54,8 @@ def prerender(scene, rpr_iter):
     cmds.setAttr("defaultRenderGlobals.imageFormat", 8)
     cmds.setAttr("RadeonProRenderGlobals.completionCriteriaIterations", rpr_iter)
 
-    rpr_render(scene)
-    print("Render finished.\n")
+    render_time = rpr_render(scene)
+    print "Render finished. Render time: {{}}\n".format(render_time)
 
     filePath = "{work_dir}" + "/" + scene + "_RPR.json"
     report = {{}}
@@ -63,7 +67,7 @@ def prerender(scene, rpr_iter):
     report['file_name'] = "converted_" + scene + ".jpg"
     report['render_color_path'] = "Color/converted_" + scene + ".jpg"
     report['scene_name'] = scene
-    report['render_time'] = 1
+    report['render_time'] = render_time
     report['test_case'] = scene
     report['difference_color'] = -0
     report['test_status'] = "passed"
