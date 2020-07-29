@@ -1,6 +1,6 @@
 [
-  {"name": "turntable_chClaireJacket_main.ma", "status": "active"},
-  {"name": "turntable_chLeonJacket_main.ma", "status": "active"},
-  {"name": "leonJacket_cnv.v004.ma", "status": "skipped"},
-  {"name": "turntable_chClaireJacket_mainCnv.v002.ma", "status": "active"}
+  {"name": "turntable_chClaireJacket_main.ma", "status": "skipped"},
+  {"name": "turntable_chLeonJacket_main.ma", "status": "skipped"},
+  {"name": "leonJacket_cnv.v004.ma", "status": "active"},
+  {"name": "turntable_chClaireJacket_mainCnv.v002.ma", "status": "skipped"}
 ]
